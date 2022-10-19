@@ -1,3 +1,5 @@
+#Código de @arthurbarcala.
+#Por favor não roube :)
 import random
 
 #Escolher uma palavra
