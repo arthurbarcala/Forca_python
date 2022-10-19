@@ -1,29 +1,22 @@
 import random
 
-#lista de palavras
-palavras = ["ansiedade", "aplaudir", "bumerangue", "orquestra", "grelha", "lobisomem", "tela", "grama", "holanda", "pelicano", "leme", "exceder"]
+#Escolher uma palavra
+palavra = "aaa"
+palavra2 = palavra
+palavraOculta = []
+for x in range(0, len(palavra)):
+    palavraOculta.append("_")
+#fazer o usuário inserir uma letra
+letra = "a"
+#verificar se a letra inserida está na palavra
+if letra in palavra:
 
-palavraEscolhida = palavras[random.randint(0, 11)] #sorteia uma palavra da lista
-palavraCensurada = "_"*len(palavraEscolhida)
-vidas = 6
-boneco = " ________\n|		|\n|\n|\n|\n|"
-letraAdvinhada = ""
-letrasInvalidas = []
+    #SE estiver, revela a letra
+    for x in palavra: #resolver erro
 
-print(boneco)
-print("--------------------")
-print(palavraCensurada)
-print("Advinhe uma letra:")
-letraAdvinhada = input();
+    #Se não estiver, perde uma vida.
+#Se revelar todas as letras ganha o jogo
+#Se perder todas as vidas perde!
 
-for x in palavraEscolhida:
-    cont = 0
-    if letraAdvinhada in palavraEscolhida:
-        if letraAdvinhada == x:
-            cont+=1
-            palavraCensurada[cont] = letraAdvinhada
-        else:
-            cont+=1
-    else:
-        print("Letra invalida!")
-        letrasInvalidas.append(x)
+
+print(palavraOculta)
